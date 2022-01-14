@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title Goes Here</title>
+     <title>Form Template</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/forms.css" />
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1>Form Template</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
             <a href="#" target="_blank">Name of project goes here</a>
@@ -19,9 +20,49 @@
      </header>
      
    <main class="wrapper">
-  
-       <h2 class="subheader">Title Goes Here</h2>
-        <p>Content goes here</p>
+    <form method="get" action="" class="main-form">
+       <div><label for="FirstName">First Name</label>:<br />
+          <input type="text" name="FirstName"  id="FirstName" placeholder="First Name" required="required" title="First Name is required" autofocus />
+    </div>
+    <div><label for="Last Name">Last Name</label>:<br />
+        <input type="text" name="Last Name"  id="LastName" placeholder="Last Name" required="required" title="Last Name is required" autofocus />
+    </div>
+    <div><label for="Email">Email</label>:<br />
+        <input type="email" name="Email"  id="Email" placeholder="Email" required="required" title="Email is required" autofocus />
+        <div><label for="Address">Address</label>:<br />
+            <input type="text" name="Address"  id="Address" placeholder="Please Put your street Address here" required="required" title="Address is required" autofocus />
+        </div>
+         <div><label for="State">State</label>:<br />
+             <select name="State" id="State" required="required">
+                <option value="">Please select your State</option>
+                <option value="AK">Alaska</option>
+                <option value="CA">California</option>
+                <option value="OR">Oregon</option> 
+                <option value="WA">Washington</option>
+           </select>
+         </div>
+         <div>
+              <fieldset>
+                <legend>Would You Like To Join Our Maling List?</legend>
+                <label><input type="radio" name="JoinMalingList" value="Yes" required="required" /> Yes</label><br />
+                <label><input type="radio" name="JoinMalingList" value="No" /> No</label>
+              </fieldset>
+         </div>
+         <div>
+            <fieldset>
+                <legend>What are you intersted in?</legend>
+               <label><input type="checkbox" name="InterstedIn" value="Website" /> Website</label><br />
+               <label><input type="checkbox" name="InterstedIn" value="OlineCalendar" /> Oline Calendar</label><br />
+               <label><input type="checkbox" name="InterstedIn" value="ContactForm" /> Contact Form</label><br />
+               <label><input type="checkbox" name="InterstedIn" value="ComplimentaryLollipops" /> Complimentary Lollipops</label>
+            </fieldset>
+       </div>
+        <div>
+            <label for="Comments">Comments</label>:<br />
+            <textarea name="Comments" placeholder="Your opinion is important to us" cols="36" rows="4"></textarea>
+        </div>
+        <div><input type="submit" value="submit" /> </div>
+    </form>
      <footer>
       <p><small>&copy; 2021 by 
           YOUR NAME HERE, All Rights Reserved ~ 
@@ -33,4 +74,4 @@
   <script src="js/main.js"></script>     
  </body>
 </html>
-/
+
