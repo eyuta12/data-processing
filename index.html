@@ -68,7 +68,13 @@
           YOUR NAME HERE, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
-     </p>
+    </p>
+      <script>
+          //https://tinyurl.com/dynamic-html-checker
+	    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+	 
+        document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); 
+      </script>
     </footer>
   </main>
   <script src="js/main.js"></script>     
